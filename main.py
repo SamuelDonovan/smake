@@ -3,6 +3,16 @@
 import foo
 import bar
 
-if __name__=="__main__":
+##
+# @file
+#
+# @brief Top level python code that calls the lower level packages
+
+##
+# @brief Main function called
+def main():
 	foo.foo.foo()
 	bar.bar.bar()
+
+if __name__=="__main__":
+	main()
