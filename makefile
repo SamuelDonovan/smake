@@ -5,6 +5,7 @@ clean:
 setup:
 	pip3 install pipreqs
 	pip3 install pyinstaller
+	sudo apt-get install doxygen
 reqs:
 	pipreqs --print --force
 build:
@@ -15,4 +16,7 @@ pkgs:
 		cd $$f && $(MAKE) all
 		cd ../..
 	done
+.PHONY: docs
+docs:
+	doxygen doxyfile
 all: clean reqs pkgs build
