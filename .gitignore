@@ -1,4 +1,5 @@
 build/
 dist/
-*.spec
+requirements.txt
 __pycache__/
+*.spec

@@ -1,1 +1,1 @@
-from foo import foo
+from foo.foo import foo

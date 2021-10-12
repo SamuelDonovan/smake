@@ -1,9 +1,9 @@
 clean:
-	rm -rf build/ dist/ *.spec __pycache__/
+	rm -rf build/ dist/ requirements.txt __pycache__/ *.spec
 setup:
 	pip3 install pipreqs
 	pip3 install pyinstaller
 reqs:
-	pipreqs --force .
+	pipreqs --print --force
 build:
 	pyinstaller main.py --onefile
