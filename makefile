@@ -12,5 +12,7 @@ build:
 .PHONY: pkgs
 pkgs:
 	for f in pkgs/*; do
-		cd $$f && $(MAKE) inst
+		cd $$f && $(MAKE) all
+		cd ../..
 	done
+all: clean reqs pkgs build
