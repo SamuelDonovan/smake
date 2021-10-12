@@ -5,7 +5,7 @@ reqs:
 	pipreqs --print --force
 
 inst: clean
-	pip3 uninstall foo -y
+	pip3 uninstall bar -y
 	pip3 install -e . --user
 	python3 setup.py sdist bdist_wheel
 

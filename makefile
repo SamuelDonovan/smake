@@ -2,6 +2,10 @@
 
 clean:
 	rm -rf build/ dist/ requirements.txt __pycache__/ *.spec
+	for f in pkgs/*; do
+		cd $$f && $(MAKE) clean
+		cd ../..
+	done
 setup:
 	pip3 install pipreqs
 	pip3 install pyinstaller
@@ -19,4 +23,4 @@ pkgs:
 .PHONY: docs
 docs:
 	doxygen doxyfile
-all: clean reqs pkgs build
+all: clean reqs docs pkgs build
