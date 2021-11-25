@@ -15,5 +15,32 @@ To install the compiled binary run:
 sudo make install
 ```
 
+## Example Directory Structure
+
+.
+├── pkgs
+│   ├── bar
+│   │   ├── bar
+│   │   │   ├── bar.py
+│   │   │   └── __init__.py
+│   │   ├── makefile
+│   │   ├── README.md
+│   │   └── setup.py
+│   └── foo
+│       ├── foo
+│       │   ├── foo.py
+│       │   └── __init__.py
+│       ├── makefile
+│       ├── README.md
+│       └── setup.py
+├── smake
+│   ├── doxyfile
+│   ├── LICENSE
+│   ├── makefile
+│   └── README.md
+└── top
+    └── main.py
+
+
 ## Doxygen Documentation
 [documentation](https://samueldonovan.github.io/pithon/)

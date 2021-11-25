@@ -4,9 +4,9 @@
 
 clean:
 	rm -rf build/ dist/ requirements.txt __pycache__/ *.spec
-	for f in pkgs/*; do
+	for f in ../pkgs/*; do
 		cd $$f && $(MAKE) clean
-		cd ../..
+		cd ..
 	done
 setup:
 	pip3 install pipreqs
@@ -19,12 +19,12 @@ setup:
 reqs:
 	pipreqs --print --force
 build:
-	pyinstaller *.py --onefile
+	pyinstaller ../top/*.py --onefile
 .PHONY: pkgs
 pkgs:
-	for f in pkgs/*; do
+	for f in ../pkgs/*; do
 		cd $$f && $(MAKE) all
-		cd ../..
+		cd ..
 	done
 .PHONY: docs
 docs:
@@ -41,7 +41,7 @@ install:
 
 uninstall:
 	if [ /usr/local/bin]
-		rm -rf 
+		rm -rf
 	else
 		echo Already uninstalled!
 	fi
