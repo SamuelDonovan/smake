@@ -17,6 +17,7 @@ sudo make install
 
 ## Example Directory Structure
 
+```bash
 .
 ├── pkgs
 │   ├── bar
@@ -40,6 +41,7 @@ sudo make install
 │   └── README.md
 └── top
     └── main.py
+```bash
 
 
 ## Doxygen Documentation
