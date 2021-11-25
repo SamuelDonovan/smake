@@ -41,7 +41,7 @@ sudo make install
 │   └── README.md
 └── top
     └── main.py
-```bash
+```
 
 
 ## Doxygen Documentation
