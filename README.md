@@ -1,4 +1,4 @@
-# pithon
+# Snake Make 🐍 
 
 ## Description
 A simple python build structure with accompanying makefiles. Allows users to build easily add and install packages.
@@ -10,7 +10,7 @@ To install all packages in the pkgs directory and compile top level into a binar
 make all
 ```
 
-To install the conpiled binary run:
+To install the compiled binary run:
 ```
 sudo make install
 ```
